@@ -127,10 +127,10 @@
   }
 
   const scenes = [
-    { image: 'classroom', alt: '教師與學生在互動顯示器前進行課堂討論的情境示意', description: '在教材畫面直接批註，保留講解脈絡，讓重點與推導過程一併呈現。', workflow: '課堂流程示例：開啟教材 → 標示重點 → 匯出課程筆記' },
-    { image: 'wireless', alt: '不同裝置將教材與作品分享到互動顯示器的情境示意', description: '並排展示學生作品，比較不同觀點。教師決定投影來源與畫面數量，讓討論保有清楚的節奏。', workflow: '課堂流程示例：學生分享作品 → 教師管理畫面 → 比較與討論' },
-    { image: 'hybrid', alt: '教室內師生透過視訊畫面與遠端參與者互動的情境示意', description: '結合視訊平台，連結遠端參與者，將現場授課與遠端討論接在一起。', workflow: '導入確認：視訊平台與網路 → 攝影畫面 → 收音與回音現場測試' },
-    { image: 'accounts', alt: '教師使用個人化帳戶與教學應用程式的情境示意', description: '依帳戶登入自己的教學工作環境，讓共用教室的使用者與設備管理有一致的規劃。', workflow: '課堂流程示例：依權限登入 → 開啟教材 → 課後登出' }
+    { image: 'classroom', alt: 'BenQ 顯示器原有課堂示意影像，作為研究架構討論情境參考', description: '共同檢視研究問題、理論架構與變項關係，現場標註研究假設與待確認事項。', workflow: '研究流程示例：展示研究架構 → 討論研究假設 → 整理待辦與修正項目' },
+    { image: 'wireless', alt: '多裝置分享畫面的產品情境示意', description: '以不同研究人員的裝置並列顯示統計圖表、訪談編碼結果或模型圖，讓團隊討論分析差異。', workflow: '研究流程示例：各組展示分析結果 → 比較差異 → 記錄需重新檢驗的項目' },
+    { image: 'hybrid', alt: '影音會議設備的產品情境示意', description: '搭配視訊平台，邀請跨校共同主持人與研究夥伴遠端參與；實際軟硬體及收音效果須現場測試。', workflow: '研究流程示例：會前整理資料 → 跨校會議 → 確認分工與後續時程' },
+    { image: 'accounts', alt: 'BenQ 帳戶登入及設備操作的產品情境示意', description: '研究計畫期中檢討、研究助理報告與期末成果展示，可搭配投影與批註功能進行研討。', workflow: '研究流程示例：成果簡報 → 研究問題回應 → 整理修改與報告項目' }
   ];
   let sceneRequest = 0;
   initTabs('.scenario-tab', (tab) => {
@@ -240,21 +240,21 @@
 
   // Illustrative student submissions: all configuration is browser-local.
   const tiles = [
-    { title: '觀點整理', bg: '#e5dcc3', ink: '#8b6944', art: '<svg viewBox="0 0 160 90" aria-hidden="true"><circle cx="45" cy="45" r="27"/><circle cx="79" cy="45" r="27"/><circle cx="113" cy="45" r="27"/></svg>' },
+    { title: '文獻整理', bg: '#e5dcc3', ink: '#8b6944', art: '<svg viewBox="0 0 160 90" aria-hidden="true"><circle cx="45" cy="45" r="27"/><circle cx="79" cy="45" r="27"/><circle cx="113" cy="45" r="27"/></svg>' },
     { title: '研究假設', bg: '#d8dfe1', ink: '#507183', art: '<span class="tile-word">Why → How</span>' },
-    { title: '概念連結', bg: '#d8ddc9', ink: '#5e754e', art: '<svg viewBox="0 0 160 90" aria-hidden="true"><path d="M20 65L55 25L105 65L140 25"/><circle cx="20" cy="65" r="7"/><circle cx="55" cy="25" r="7"/><circle cx="105" cy="65" r="7"/><circle cx="140" cy="25" r="7"/></svg>' },
-    { title: '課堂提問', bg: '#e4cecb', ink: '#965b5f', art: '<span class="tile-big">What if?</span>' },
-    { title: '方法比較', bg: '#dad3df', ink: '#7f688a', art: '<svg viewBox="0 0 160 90" aria-hidden="true"><rect x="25" y="18" width="45" height="54" rx="2"/><rect x="90" y="18" width="45" height="54" rx="2"/><path d="M35 35H60M35 45H55M100 35H125M100 45H120"/></svg>' },
-    { title: '案例發想', bg: '#dfd8c6', ink: '#887b52', art: '<span class="tile-word">IDEA ↗</span>' },
-    { title: '討論重點', bg: '#cbded9', ink: '#4b8071', art: '<svg viewBox="0 0 160 90" aria-hidden="true"><path d="M25 28H135M25 45H105M25 62H120"/><path d="M125 57L133 65L145 48"/></svg>' },
-    { title: '結構分析', bg: '#dfd1c6', ink: '#986b4d', art: '<svg viewBox="0 0 160 90" aria-hidden="true"><rect x="61" y="12" width="38" height="20"/><path d="M80 32V49M33 49H127M33 49V61M127 49V61"/><rect x="14" y="61" width="38" height="20"/><rect x="108" y="61" width="38" height="20"/></svg>' },
-    { title: '延伸思考', bg: '#d4d9df', ink: '#5f718b', art: '<span class="tile-big">Next.</span>' }
+    { title: '變項關係', bg: '#d8ddc9', ink: '#5e754e', art: '<svg viewBox="0 0 160 90" aria-hidden="true"><path d="M20 65L55 25L105 65L140 25"/><circle cx="20" cy="65" r="7"/><circle cx="55" cy="25" r="7"/><circle cx="105" cy="65" r="7"/><circle cx="140" cy="25" r="7"/></svg>' },
+    { title: '研究問題', bg: '#e4cecb', ink: '#965b5f', art: '<span class="tile-big">What if?</span>' },
+    { title: '研究方法', bg: '#dad3df', ink: '#7f688a', art: '<svg viewBox="0 0 160 90" aria-hidden="true"><rect x="25" y="18" width="45" height="54" rx="2"/><rect x="90" y="18" width="45" height="54" rx="2"/><path d="M35 35H60M35 45H55M100 35H125M100 45H120"/></svg>' },
+    { title: '樣本規劃', bg: '#dfd8c6', ink: '#887b52', art: '<span class="tile-word">IDEA ↗</span>' },
+    { title: '會議決議', bg: '#cbded9', ink: '#4b8071', art: '<svg viewBox="0 0 160 90" aria-hidden="true"><path d="M25 28H135M25 45H105M25 62H120"/><path d="M125 57L133 65L145 48"/></svg>' },
+    { title: '模型架構', bg: '#dfd1c6', ink: '#986b4d', art: '<svg viewBox="0 0 160 90" aria-hidden="true"><rect x="61" y="12" width="38" height="20"/><path d="M80 32V49M33 49H127M33 49V61M127 49V61"/><rect x="14" y="61" width="38" height="20"/><rect x="108" y="61" width="38" height="20"/></svg>' },
+    { title: '後續驗證', bg: '#d4d9df', ink: '#5f718b', art: '<span class="tile-big">Next.</span>' }
   ];
   function setGrid(count) {
     const grid = $('#shareGrid');
     grid.className = `share-grid grid-${count}`;
     grid.setAttribute('aria-label', `${count} 個畫面配置示意`);
-    grid.innerHTML = tiles.slice(0, count).map((tile, i) => `<div class="share-tile" style="--tile-bg:${tile.bg};--tile-ink:${tile.ink}"><div class="tile-heading"><b>第 ${i + 1} 組</b><span>${tile.title}</span></div><div class="tile-art">${tile.art}</div></div>`).join('');
+    grid.innerHTML = tiles.slice(0, count).map((tile, i) => `<div class="share-tile" style="--tile-bg:${tile.bg};--tile-ink:${tile.ink}"><div class="tile-heading"><b>資料 ${i + 1}</b><span>${tile.title}</span></div><div class="tile-art">${tile.art}</div></div>`).join('');
     $$('[data-grid]').forEach((button) => {
       const selected = Number(button.dataset.grid) === count;
       button.classList.toggle('active', selected);
@@ -265,10 +265,10 @@
   setGrid(4);
 
   const aiContent = [
-    { title: '一個關鍵詞，接出下一段討論。', description: '圈選課堂中出現的概念，查找延伸資料，再由教師判斷哪些內容適合帶進課堂。', example: '講解教材時，圈選學生提問的名詞，接續查找相關資料。', graphic: '<span class="lasso-word">課堂關鍵概念</span>' },
-    { title: '讓推導過程，有清楚的呈現。', description: '使用 EZMath 整理公式與圖形，輔助課堂說明，讓學生接續理解教師的推導。', example: '說明教材公式時，整理板書中的數學式與圖形，再逐步補充解釋。', graphic: '<span class="math-word">y = ƒ(x)</span>' },
-    { title: '從草稿開始，把課程變成自己的。', description: '產生備課草稿，再由教師依課程目標、教材與學生程度調整內容。', example: '以本週課程主題建立大綱草稿，再補上指定閱讀與課堂討論。', graphic: '<span class="outline-word">學習目標 ──────<br>課堂活動 ────<br>討論與複習 ─────</span>' },
-    { title: '把課堂重點，轉成檢核理解的起點。', description: '利用 AI Quiz 建立測驗草稿，由教師確認題目與答案，再決定如何運用在課程中。', example: '根據當堂的核心概念準備測驗草稿，檢查題意與答案後再使用。', graphic: '<span class="quiz-word">Q<span>A</span><span>B</span><span>C</span></span>' }
+    { title: '從研究概念延伸查找。', description: '利用套索圈選研究方法術語，查找延伸資訊；搜尋內容須回到學術文獻與原始來源核對。', example: '研究會議中圈選「抽樣偏誤」，作為後續查找方法文獻的線索。', graphic: '<span class="lasso-word">研究方法概念</span>' },
+    { title: '把模型推導呈現在團隊面前。', description: '透過 EZMath 類型工具整理公式與圖形，支援研究生理解模型推導；不取代專業統計分析軟體。', example: '研究方法討論時，展示迴歸模型符號與推導流程，再由研究人員檢查模型設定。', graphic: '<span class="math-word">y = ƒ(x)</span>' },
+    { title: '研究助理訓練的大綱草稿。', description: '可將教學用大綱工具運用於研究方法工作坊的課程草稿，內容須由指導教授依研究需求修訂。', example: '為研究助理準備訪談倫理與資料編碼訓練的課程大綱，再由主持人逐項確認。', graphic: '<span class="outline-word">訓練目標 ──────<br>研究方法 ────<br>實作檢核 ─────</span>' },
+    { title: '研究方法訓練的知識檢核。', description: '可將教學用 AI Quiz 作為研究助理訓練的測驗草稿，並由教授檢查題目與答案。', example: '研究助理完成研究倫理訓練後，用自訂題目確認對資料保存與保密要求的理解。', graphic: '<span class="quiz-word">Q<span>A</span><span>B</span><span>C</span></span>' }
   ];
   initTabs('.ai-option', (tab) => {
     const data = aiContent[Number(tab.dataset.ai)];
@@ -360,14 +360,54 @@
     }
   });
 
-  const checklist = 'BenQ RE05AC｜大專院校教室現勘重點\n\n1. 看得清楚\n從最後一排檢查教材字級；確認窗光、照明、閱讀距離與座位視線。\n\n2. 操作順手\n帶實際教材試寫、批註與投影；確認操作高度及畫面配置。\n\n3. 連線可用\n確認校園網路、帳戶政策、投影相容性；現場測試視訊影像、收音與回音。\n\n4. 安裝到位\n確認產品尺寸、承重、VESA 壁掛或支架條件；規劃電源與走線。\n\n備註：設備規格依 BenQ 台灣官方資訊；採購金額與安裝費用依專案報價確認。';
+  const checklist = [
+    'BenQ RE05AC｜國科會研究計畫設備需求評估清單',
+    '',
+    '1. 研究任務',
+    '列出計畫名稱、研究任務、擬使用的圖表／模型／資料類型及會議流程。',
+    '',
+    '2. 既有設備限制',
+    '盤點實驗室或研究室現有顯示設備，說明具體不足及與研究直接相關的需求。',
+    '',
+    '3. 使用場域與功能驗證',
+    '確認場地尺寸、閱讀距離、批註、多裝置分享、跨校會議、資安與帳戶管理需求。',
+    '',
+    '4. 經費與採購程序',
+    '確認國科會計畫研究設備費規定、經費核定清單與必要的校內行政程序。',
+    '請取得正式報價並核對設備本體、安裝、配件、保固與維護條件。',
+    '',
+    '5. 資料與研究倫理',
+    '含個人資料或未公開研究成果，應依校方資訊安全與研究倫理要求管理。',
+    '',
+    '資料來源：',
+    'https://law.nstc.gov.tw/LawContent.aspx?id=FL026713',
+    'https://law.nstc.gov.tw/LawContent.aspx?id=GL000059',
+    'https://www.benq.com/zh-tw/education/benq-board-interactive-displays/re05ac-essential-series-board/specs.html'
+  ].join('\\n');
+  const justification = '本研究計畫預計於〔研究場域〕進行〔具體研究任務〕，研究團隊需共同檢視〔研究模型／資料圖表〕，並於〔會議或分析流程〕進行批註與討論。經盤點現有設備，尚有〔具體不足〕，因此擬評估使用互動觸控顯示器支援上述工作。設備規格、使用頻率及必要性，將依計畫內容與校內採購程序提出佐證。';
+  $('#copyJustification').addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(justification);
+      toast('研究設備需求說明範本已複製，請填入實際研究內容。');
+    } catch {
+      const dialog = $('#checklistDialog');
+      $('#checklistText').value = justification;
+      $('#checklistDialog .dialog-heading h2').textContent = '研究設備需求說明範本';
+      if (dialog.showModal) dialog.showModal();
+      else dialog.setAttribute('open', '');
+      $('#checklistText').focus();
+      $('#checklistText').select();
+    }
+  });
   $('#checklistText').value = checklist;
   $('#copyChecklist').addEventListener('click', async () => {
     try {
       await navigator.clipboard.writeText(checklist);
-      toast('現勘重點已複製，可貼到 LINE 或工作筆記。');
+      toast('研究設備需求評估清單已複製。');
     } catch {
       const dialog = $('#checklistDialog');
+      $('#checklistText').value = checklist;
+      $('#checklistDialog .dialog-heading h2').textContent = '研究設備需求評估清單';
       if (dialog.showModal) dialog.showModal();
       else dialog.setAttribute('open', '');
       $('#checklistText').focus();
