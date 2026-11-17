@@ -383,7 +383,7 @@
     'https://law.nstc.gov.tw/LawContent.aspx?id=FL026713',
     'https://law.nstc.gov.tw/LawContent.aspx?id=GL000059',
     'https://www.benq.com/zh-tw/education/benq-board-interactive-displays/re05ac-essential-series-board/specs.html'
-  ].join('\\n');
+  ].join('\n');
   const justification = '本研究計畫預計於〔研究場域〕進行〔具體研究任務〕，研究團隊需共同檢視〔研究模型／資料圖表〕，並於〔會議或分析流程〕進行批註與討論。經盤點現有設備，尚有〔具體不足〕，因此擬評估使用互動觸控顯示器支援上述工作。設備規格、使用頻率及必要性，將依計畫內容與校內採購程序提出佐證。';
   $('#copyJustification').addEventListener('click', async () => {
     try {
