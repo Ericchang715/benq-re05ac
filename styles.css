@@ -69,3 +69,15 @@
  .nstc-example{background:#eee}
  .nstc-guide button{display:none}
 }
+
+/* RE05AC brand-only layout after removal of publisher identity */
+.site-header .brand{min-width:124px}
+.site-header .brand-product{font-size:17px;line-height:1.15;letter-spacing:.045em;font-weight:600}
+.site-header .brand-product b{font-size:21px;font-weight:700;color:var(--wine)}
+.footer-main .footer-brand{font-family:CampusDisplay,'Helvetica Neue',sans-serif;font-size:18px;font-weight:650;letter-spacing:.025em;white-space:nowrap}
+@media(max-width:760px){
+ .site-header .brand{min-width:100px}
+ .site-header .brand-product{font-size:13px}
+ .site-header .brand-product b{font-size:17px}
+ .footer-main .footer-brand{font-size:15px}
+}
