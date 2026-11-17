@@ -35,3 +35,37 @@
 .size-product,.size-product img{max-height:none}
 @media(max-width:760px){.size-stage{height:auto;aspect-ratio:1.05;padding-bottom:80px}.size-stage .size-guide{transform:translateY(calc(-50% - 40px))}}
 @media print{.site-header,.chapter-nav,.presentation-controls,.reading-progress,.hero-links,.pen-controls,.grid-controls,.size-selector,.comparison>summary,#copyChecklist,.back-top{display:none!important}html,body{background:white;color:black}.container{width:95%}.section-pad{padding:30px 0}.chapter{break-inside:avoid;overflow:visible}.js .reveal{opacity:1;transform:none}.dark-section{background:#eee;color:#222}.dark-section p{color:#555}.scenario-background{opacity:.15}.scenario-shade{display:none}.scenarios{min-height:0}.scenario-heading{margin-bottom:20px}.scenario-content{padding:25px 0}.section-label{margin-bottom:20px}.ai-panel{background:#f4f1eb;color:#252722}.ai-panel p,.ai-panel>p,.ai-example p{color:#555}.site-footer{padding-bottom:0}details:not([open])>div{display:block}}
+
+/* Research-plan application: equipment justification and NSTC guidance */
+.nstc-guide{margin-top:72px;padding:35px 40px 38px;background:#f5f0e9;color:#292823;border-left:5px solid #c49a7e}
+.nstc-guide-head{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-bottom:18px;border-bottom:1px solid #d5cdc4;margin-bottom:20px;font-size:16px;font-weight:700}
+.nstc-guide-head>a{font-size:12px;color:#7d203e;text-decoration:underline;text-underline-offset:4px}
+.nstc-guide>p{color:#554d4a;font-size:14px;line-height:1.95;margin:0}
+.nstc-guide-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin:25px 0}
+.nstc-guide-grid>div{border-top:1px solid #d3c8bd;padding-top:16px}
+.nstc-guide-grid h3{font-size:18px;line-height:1.5;margin-bottom:9px}
+.nstc-guide-grid p{color:#554d4a;font-size:13px;line-height:1.9}
+.nstc-example{background:#e6d9ce;padding:26px 30px;margin:16px 0 22px}
+.nstc-example>span{display:block;font-size:13px;font-weight:700;color:#77243f;margin-bottom:12px}
+.nstc-example p{font-size:14px;color:#423c39;line-height:2}
+.nstc-example .button{margin-top:20px;font-size:12px;background:#7c1e3d;color:#fff}
+.nstc-example .button:hover{background:#54132a}
+.nstc-disclaimer{font-size:12px!important;color:#645b55!important}
+.nstc-disclaimer a{color:#77243f;text-decoration:underline;text-underline-offset:3px}
+@media(max-width:760px){
+ .nstc-guide{margin-top:42px;padding:25px 18px}
+ .nstc-guide-head{flex-direction:column;align-items:flex-start;gap:10px;font-size:14px}
+ .nstc-guide>p{font-size:12px}
+ .nstc-guide-grid{grid-template-columns:1fr;gap:17px}
+ .nstc-guide-grid h3{font-size:16px}
+ .nstc-guide-grid p{font-size:12px}
+ .nstc-example{padding:20px 17px}
+ .nstc-example p{font-size:12px}
+ .nstc-example .button{width:100%;padding:12px 13px;gap:8px}
+}
+@media print{
+ .nstc-guide{background:#f8f8f8;color:#111;padding:20px;break-inside:avoid}
+ .nstc-guide>p,.nstc-guide-grid p,.nstc-example p,.nstc-disclaimer{color:#333!important}
+ .nstc-example{background:#eee}
+ .nstc-guide button{display:none}
+}
